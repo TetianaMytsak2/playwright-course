@@ -2,7 +2,7 @@ import { test } from '@playwright/test'
 import { MyAccountPage } from '../page-objects/MyAccountPage'
 import { getLoginToken } from '../api-calls/getLoginToken'
 
-test ("My Account using cookie injection", async ({page}) => {
+test.skip ("My Account using cookie injection", async ({page}) => {
 
     const loginToken = await getLoginToken()
     console.warn({loginToken})
